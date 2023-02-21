@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="person" class="org.example.Person">
+        <property name="name" value="Asan"/>
+        <property name="age" value="18"/>
+        <property name="high" value="1.7"/>
+        <property name="cat1" >
+            <list>
+    <bean id="cat" class="org.example.Cat">
+        <property name="name" value="Mur mur"/>
+         <property name="age" value="3"/>
+    </bean>
+
+    <bean id="cat1" class="org.example.Cat">
+        <property name="name" value="Mur murbek"/>
+         <property name="age" value="3"/>
+    </bean>
+            </list>
+        </property>
+    </bean>
+
+</beans>
